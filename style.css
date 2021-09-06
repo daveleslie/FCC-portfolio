@@ -1,0 +1,76 @@
+html {
+  font-size: 62.5%;;
+}
+
+body {
+  font-family: "Open Sans";
+  margin: 0;
+}
+
+main {
+  /* padding-top: 6rem; */
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  position: fixed;
+  justify-content: flex-end;
+  width: 100%;
+  background-color: black;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin-right: 2rem;
+}
+
+.nav-list a {
+  display: block;
+  color: white;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 2rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2rem;
+  
+}
+
+.project-tile {
+  border: solid;
+  padding: 2rem;
+  height: 10rem;
+  width: 15rem;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e7e7e7;
+}
