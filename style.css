@@ -11,8 +11,25 @@ main {
   /* padding-top: 6rem; */
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: #e7e7e7;
+  padding: 0;
+}
+
+footer h5 {
+  margin: 0;
+  padding: 1rem;
+}
+
 a {
   text-decoration: none;
+}
+
+a:visited {
+  color: black;
 }
 
 .nav {
@@ -20,7 +37,7 @@ a {
   position: fixed;
   justify-content: flex-end;
   width: 100%;
-  background-color: black;
+  background-color: #343434;
 }
 
 .nav-list {
@@ -32,7 +49,7 @@ a {
 .nav-list a {
   display: block;
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 1rem 2rem;
 }
 
@@ -46,24 +63,54 @@ a {
 
 .projects-section {
   display: flex;
+  color: #e7e7e7;
   flex-direction: column;
   /* justify-content: center; */
-  align-items: center;
+  /* align-items: center; */
   padding: 2rem;
+  background-color: #343434;
+  height: 100vh;
 }
 
 .project-grid {
   display: grid;
   grid-template-columns: auto auto auto;
-  gap: 2rem;
+  justify-content: end;
+  align-content: start;
+  gap: 1rem;
+  padding: 1rem;;
   
 }
 
 .project-tile {
-  border: solid;
-  padding: 2rem;
-  height: 10rem;
-  width: 15rem;
+  /* border: solid; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2px;
+  overflow: hidden;
+  margin: 2rem;
+  height: 20rem;
+  max-width: 100%;
+  background-color: white;
+  --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  
+}
+
+.project-tile a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.project-image {
+  height: calc(100% - 4rem);
+  width: 100%;
+  object-fit: cover;
 }
 
 .contact-section {
@@ -73,4 +120,7 @@ a {
   align-items: center;
   height: 100vh;
   background-color: #e7e7e7;
+  margin-bottom: 0;
 }
+
+
