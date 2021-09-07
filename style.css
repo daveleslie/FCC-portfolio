@@ -127,10 +127,14 @@ a:visited {
 .contact-links {
   display: flex;
   justify-content: center;
-  width: 80%;
+  width: 100%;
+  padding: 1rem;
 }
 
 .btn {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 1rem 2rem;
 }
